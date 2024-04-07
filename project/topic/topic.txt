@@ -1,0 +1,29 @@
+Đề tài 10. 
+Dựa vào tập dữ liệu ảnh chữ số viết tay (đã được giáo viên cung cấp trong phần thực hành) 
+đặt trong các thư mục theo cấu trúc tương tự như trong bài thực hành đã có.
+
+1) Thực hiện việc rút gọn số chiều dữ liệu, sau đó tham khảo để hiển thị trực quan 
+các phân lớp dữ liệu dạng 3D hoặc 2D.
+
+2) Thực hiện phân cụm (clustering) dữ liệu gốc bằng 01 thuật toán phân cụm. 
+Hiển thị trực quan và đánh dấu các cụm.
+
+3) Xây dựng chương trình sử dụng mô hình Naïve Bayes phù hợp để phân loại các hình ảnh, 
+huấn luyện mô hình bằng tập dữ liệu training sau đó chạy kiểm tra với dữ liệu trong tập validation.
+
+4) Đưa dữ liệu về dạng ảnh 10x10 pixels (giảm số chiều xuống còn 100 chiều bằng phương pháp 
+- phân tích thành phần chính PCA - gộp chung dữ liệu – cả train và validation – sau đó mới giảm số chiều). 
+Xây dựng chương trình sử dụng mô hình ANN (mạng neural nhân tạo – dạng full connection) 
+để phân loại các hình ảnh, huấn luyện mô hình bằng tập dữ liệu training,
+sau đó chạy kiểm tra với dữ liệu trong tập validation.
+
+5) Xây dựng chương trình sử dụng mô hình Multinomial Logistic Regression (Softmax) 
+để phân loại các hình ảnh, huấn luyện mô hình bằng tập dữ liệu training,
+sau đó chạy kiểm tra với dữ liệu trong tập validation.
+
+6) So sánh độ chính xác (sử dụng accuracy, confusion matrix, recall và precision) 
+của các mô hình trong ý 3) 4) và ý 5).
+
+Giải thích kết quả thu được.
+
+Yêu cầu giữa kỳ: Ý 1), 3) và 4) và phần tương ứng của ý 6.
