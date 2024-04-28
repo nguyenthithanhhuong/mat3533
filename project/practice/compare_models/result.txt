@@ -1,0 +1,60 @@
+1. Mô hình Naive Bayes:
++ Accuracy: 87.92%
++ Precision: 88.01%
++ Recall: 87.86%
++ Confusion Matrix:
+[[ 923    0   31    1    0   14    7    1    2    1]
+ [   0 1068    8    9    7   10    9    3   20    1]
+ [  16    0  875   55   14   10    8   11   42    1]
+ [   4    0   40  874    0   35    4   19   24   10]
+ [   0    0   33    1  854    5   10    4    4   71]
+ [   4    1    9   62    5  762    8    3   32    6]
+ [   6    2   34    1    7   32  875    0    1    0]
+ [   3   18   42    7   22   15    5  856   11   49]
+ [  13    0   25   25    7   28    5    7  854   10]
+ [  12    1   29    7   50   21    1   27   10  851]]
+
+ 2. Mô hình ANN:
++ Accuracy: 96.37%
++ Precision: 96.37%
++ Recall: 96.33%
++ Confusion Matrix:
+[[ 957    0    9    0    2    2    3    4    3    0]
+ [   0 1123    2    2    0    0    1    1    5    1]
+ [   0    6  993   13    4    0    3    6    7    0]
+ [   0    1    6  977    0    9    1    4    5    7]
+ [   1    1    0    0  959    0    6    3    1   11]
+ [   4    3    0   13    0  840    7    2   16    7]
+ [   4    2    1    1    4    5  938    0    3    0]
+ [   0    9    8   12   10    0    1  977    2    9]
+ [   4    3   11    5    6    7    4    2  930    2]
+ [   1    6    1   10   21    4    2   13    8  943]]
+
+ == So sánh 2 mô hình ==
+ + Độ chính xác của mô hình ANN (96.37%) cao hơn nhiều 
+ so với độ chính xác của mô hình Gaussian Naive Bayes (87.92%).
+ + Các số liệu trên đường chéo chính của ma trận Confusion của
+ mô hình ANN cao và ít nhầm lẫn hơn mô hình Gaussian Naive Bayes.
+ Điều này cho thấy mô hình ANN có khả năng "học" các mối quan hệ 
+ phức tạp giữa các đặc trưng của dữ liệu tốt hơn mô hình Gaussian
+ Naive Bayes. Như vậy, Gausian Naive Bayes là một mô hình đơn giản,
+ huấn luyện nhanh chóng, tuy nhiên việc "học" các mối quan hệ phức
+ tạp giữa các đặc trưng của dữ liệu chưa thực sự tốt. Điều đó dẫn
+ đến việc nhận dạng chữ số bằng mô hình này chưa thực sự đáng tin 
+ cậy. Bên cạnh đó, mô hình ANN phức tạp hơn và tốn nhiều thời gian
+ huấn luyện hơn, nhưng khả năng "học" mối quan hệ phức tạp giữa các
+ đặc trưng của dữ liệu và việc dự đoán trên tập kiểm tra cao hơn 
+ đáng kể so với mô hình Gausan Naive Bayes. Vì vậy mô hình ANN 
+ có độ chính xác cao hơn và đáng tin cậy hơn trong việc nhận dạng 
+ chữ số viết tay so với mô hình Gausian Naive Bayes.
+
+
+ Nhìn chung, việc dự đoán của mô hình có độ chính xác cao và
+  đạt được hiệu suất tốt. Điều này cho thấy mô hình đã "học" 
+  một cách khá hiệu quả và có thể tin cậy khi sử dụng để 
+  phân loại các hình ảnh chữ số viết tay 
+
+  Nhìn chung, mô hình dự đoán các lớp và đạt được hiệu suất
+   khá tốt, với số lượng nhầm lẫn ít. Tuy nhiên, mô hình vẫn
+    chưa thực sự đáng tin cậy trong việc nhận dạng các chữ 
+    số có nhiều đặc trưng giống nhau.
